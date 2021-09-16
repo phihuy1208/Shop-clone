@@ -1,0 +1,278 @@
+/* Start navigation bar */
+
+#header {
+    width: 100%;
+    background-image: linear-gradient(0, #ff6634, #f53e2d);
+    height: 12rem;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 4px;
+}
+
+.header-top__list {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+}
+
+.header-top-list__item {
+    font-weight: 300;
+    padding-right: 5px;
+    display: flex;
+}
+
+.header-top-list__icon:hover,
+.header-top-list__item:hover>a {
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.header-top-list__icon {
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.header-top-list__item+.header-top-list__item {
+    padding-left: 5px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-top-list__link {
+    text-decoration: none;
+}
+
+.header-top-list__link--strong {
+    font-weight: 400;
+}
+
+.header__bottom {
+    display: flex;
+    padding: 16px 0 10px;
+    align-items: center;
+}
+
+.header-bottom__logo-section {
+    flex: 3;
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-bottom-search__input-search {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    border: 0;
+    background-color: #fff;
+}
+
+.header-bottom-search__input-search:focus {
+    outline: none;
+}
+
+.header-bottom__logo {
+    padding-right: 12px;
+}
+
+.header-bottom-search__items {
+    display: flex;
+    list-style: none;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.header-bottom__search-section {
+    flex: 9;
+}
+
+.header-bottom-search__list {
+    font-size: 12px;
+}
+
+.header-bottom-search__list+.header-bottom-search__list {
+    padding-left: 12px;
+}
+
+.header-bottom__cart-wrapper {
+    text-align: center;
+    flex: 2;
+}
+
+.header-bottom__cart-logo {
+    font-size: 32px;
+}
+
+
+/* Header QR code */
+
+.qr-code-container:hover .header__qr {
+    display: block;
+}
+
+.qr-code-container {
+    position: relative;
+}
+
+.header__qr {
+    display: none;
+    width: 185px;
+    position: absolute;
+    left: 0;
+    top: 150%;
+    z-index: 100;
+    box-shadow: 0 0 1px #888;
+    animation: fadeIn ease 0.5s;
+}
+
+.header__qr::before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    background-color: transparent;
+}
+
+.header__qr>img {
+    width: 100%;
+}
+
+.header-qr__apps {
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.header-qr-apps__download {
+    width: 45%;
+    height: 30px;
+}
+
+.header-qr-apps__download>img {
+    width: 100%;
+}
+
+
+/* End header QR code */
+
+
+/* Header notìication */
+
+.notify-container {
+    position: relative;
+}
+
+.notify-container:hover .header__notify {
+    display: block;
+}
+
+.header__notify::before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    background-color: transparent;
+}
+
+.header__notify {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 150%;
+    background-color: var(--white-color);
+    width: 404px;
+    z-index: 100;
+    box-shadow: 0 0 1px #888;
+    animation: fadeIn ease 0.5s;
+}
+
+.header-notify__header {
+    height: 40px;
+}
+
+.header-notify__header h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header-notify__content {}
+
+.header-notify__footer:hover,
+.header-notify__item:hover {
+    background-color: #f7f7f7f7;
+}
+
+.header-notify__item--unread {
+    background-color: var(--primary-color-rgba);
+}
+
+.header-notify__link {
+    display: flex;
+    padding: 8px 24px 12px 12px;
+    text-decoration: none;
+}
+
+.head-notify__img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header-notify__info {
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-notify__slogan {
+    color: var(--black-color);
+    font-size: 1.4rem;
+    padding-bottom: 4px;
+    font-weight: 400;
+}
+
+.header-notify__description {
+    color: #756f6e;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding-bottom: 4px;
+}
+
+.header-notify__footer {
+    height: 40px;
+    background-color: #f9f9f9f9;
+}
+
+.header-notify__footer h3 {
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/* End header notìication */
+
+
+/* End navigation bar */
+
+.content {}
+
+.description {}
+
+.catergory {}
+
+.help {}
+
+.footer {}
